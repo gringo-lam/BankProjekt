@@ -27,6 +27,9 @@
         double kontogeb;
 
     };
+    class Wertpapierkonto : Konto {
+
+    };
 
     struct Adresse {
         int adressId;
@@ -43,5 +46,17 @@
         QString nachname;
         QString gebdatum;
     };
+    struct Einkauf {
+        int einkaufId;
+        QString datum;
+        double gesPreis;
+        double anzahl;
+        int WKN;
+    };
+    struct Wertpapier{
+        QString WKN;
+        double preis;
+        QString wertpapiername;
+    }
 
 #endif //
